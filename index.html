@@ -108,7 +108,7 @@
         display: block;
       }
 
-      #map2 {
+      #map_mimeguri {
         width: 90%;
         height: 90%;
         position: relative;
@@ -116,7 +116,7 @@
         left: 50%;
         transform: translate(-50%,-50%);
         z-index: 2300;
-        background-image: url("src/map2.png");
+        background-image: url("src/map_mimeguri.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -255,7 +255,7 @@
     <div id="introduction_2"></div>
     <div id="introduction_3"></div>
     <div id="map1"></div>
-    <div id="map2"></div>
+    <div id="map_mimeguri"></div>
     <div id="background"></div>
     <div id="Gagou"></div>
     <div id="Overlay"></div>
@@ -310,7 +310,7 @@
       let introduction_3 = document.getElementById("introduction_3");
       let Gagou = document.getElementById("Gagou");
       let map1 = document.getElementById("map1");
-      let map2 = document.getElementById("map2");
+      let map_mimeguri = document.getElementById("map_mimeguri");
       let background = document.getElementById("background");
 
       introduction_1.addEventListener("click", () => {
@@ -334,12 +334,12 @@
       });
 
       map1.addEventListener("click", () => {
-        $("#map2").fadeIn();
+        $("#map_mimeguri").fadeIn();
         $("#background").fadeIn();
       });
 
-      map2.addEventListener("click", () => {
-        $("#map2").fadeOut();
+      map_mimeguri.addEventListener("click", () => {
+        $("#map_mimeguri").fadeOut();
         $("#background").fadeOut();
       });
     </script>
